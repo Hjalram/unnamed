@@ -4,5 +4,19 @@
     <title>title</title>
   </head>
   <body>
+    <button id="cashButton">$</button>
+    <p id="cashDisplay">$0</p>
+    <script>
+      const cashButton = document.getElementById('cashButton');
+      const cashDisplay = document.getElementById('cashDisplay');
+      
+      let cash = 0;
+      
+      cashButton.onclick = function()
+      {
+        cash += 1; 
+        cashDisplay.innerHTML = cash;
+      }
+    </script>
   </body>
 </html>
